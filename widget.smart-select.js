@@ -259,6 +259,7 @@
      };
      this.container.actionsClearAllItems.onclick = function(){
         self.clearAll();
+        self.showSelected(false);
      };
      this.container.actionsSelectAllItems.onclick = function(){
         self.selectAll();
