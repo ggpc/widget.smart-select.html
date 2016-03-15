@@ -92,6 +92,7 @@
     font-weight: bold;
 }
 .ggp-smart-select-item-hidden,
+.ggp-smart-select .ggp-smart-select-item.ggp-smart-select-item-selected.ggp-smart-select-item-hidden,
 .ggp-smart-select.ggp-smart-select-showSelected .ggp-smart-select-item{
     height: 0;
     margin: 0;
