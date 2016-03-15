@@ -1,0 +1,127 @@
+.ggp-smart-select{
+    width: inherit;
+    height: inherit;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #eeeeee;
+    background: #ffffff;
+    color: #000000;
+    font-size: 15px;
+}
+.ggp-smart-select-disabled{
+    background: rgba(200, 200, 200, 0.2);
+    opacity: 0.5;
+}
+.ggp-smart-select-disabled .ggp-smart-select-item-label{
+    cursor: default;
+}
+.ggp-smart-select-actions{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+}
+.ggp-smart-select-info{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 30px;
+}
+.ggp-smart-select-infoSelected:after{
+    content: "/";
+}
+.ggp-smart-select-actions button{
+    border: none;
+    background: none;
+    text-decoration: underline;
+    margin:0 3px;
+    padding: 0;
+    cursor: pointer;
+}
+.ggp-smart-select-actions button:disabled{
+    cursor: default;
+}
+.ggp-smart-select-actions-button-hidden{
+    display: none;
+}
+.ggp-smart-select-itemsContainer{
+    overflow: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30px;
+    bottom: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ggp-smart-select-item,
+.ggp-smart-select.ggp-smart-select-showSelected .ggp-smart-select-item.ggp-smart-select-item-selected{
+    display: block;
+    margin: 3px 0;
+    padding: 1px 3px;
+    overflow: hidden;
+    visibility: visible;
+    height: auto;
+    width: auto;
+}
+.ggp-smart-select-item:hover{
+    background: #efefef;
+}
+.ggp-smart-select-item-label{
+    display: block;
+    cursor: pointer;
+}
+.ggp-smart-select-hiddenInput{
+    position: absolute;
+    visibility: hidden;
+    z-index: -1;
+    height: 0;
+    width: 0;
+}
+.ggp-smart-select-filter{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 30px;
+}
+.ggp-smart-select-item-selected{
+    font-weight: bold;
+}
+.ggp-smart-select-item-hidden,
+.ggp-smart-select.ggp-smart-select-showSelected .ggp-smart-select-item{
+    height: 0;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}
+.ggp-smart-select-filter-input{
+    width: 100%;
+    height: inherit;
+    box-sizing: border-box;
+}
+.ggp-smart-select-clearFilter{
+    position: absolute;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    right: 0px;
+    width: 25px;
+    height: 25px;
+}
+.ggp-smart-select .ggp-smart-select-actionsShowAll{
+    display: none;
+}
+.ggp-smart-select.ggp-smart-select-showSelected .ggp-smart-select-actionsShowSelected{
+    display: none;
+}
+.ggp-smart-select.ggp-smart-select-showSelected .ggp-smart-select-actionsShowAll{
+    display: inline-block;
+}
+
