@@ -6,9 +6,18 @@ Advanced UI control with  multiple selection and filter tools. Has own controlle
 # Dependency
 [ggpc/system.dom.js](https://github.com/ggpc/system.dom.js) - dom utility. Using dom manipulations
 
+# Requirements
+Widget could be pretty with special css style only. Please don't forget to add this code in Your html document:
+```html
+<link href="widget.smart-select.css" type="text/css" rel="stylesheet">
+```
+> Each element in smartSelect widget has own className, so You could customize widget for any theme. 
+> If CSS styles are too difficult, please contact me. 
+
 # Methods
 
 smartSelect(parameters);
+
 setSmartSelectDefaultLang(lang);
 
 ## smartSelect object Methods and Properties
@@ -19,8 +28,19 @@ setSmartSelectDefaultLang(lang);
 - onChange: null || function // try to evaluate after every widget value changing
  
 ### Methods
-- start()
-- stop()
+- addItem(position, value, label)
+- removeItem(position)
+- applyFilter()
+- clearAll()
+- clearFilter()
+- exportValues()
+- getSelectedLabels()
+- getValue()
+- invertSelection()
+- isDisabled()
+- selectAll()
+- setDisabled(bool)
+- showSelected(bool)
 
 # Usage
 
